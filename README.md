@@ -1,1 +1,1 @@
-# gr_1_diachenko_aleksander_js_dz_1
+# gr_1_diachenko_aleksander_js
