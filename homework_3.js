@@ -14,7 +14,7 @@ if (isNaN(_number_first) || isNaN(_number_second)) {
         for (let i = min_number; i <= max_number; i += 1) {
             if (i % 6 === 0) {
                 sum = sum + i;
-                quantity = Math.trunc((max_number - min_number) / 6);
+                quantity = Math.trunc((max_number - min_number)/6);
             }
         }
     alert(`Количество чисел диапазона кратных шести - ${quantity}, cумма чисел диапазона кратных шести - ${sum} `);
