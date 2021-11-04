@@ -1,14 +1,21 @@
 // Задача № 1 Напишите функцию get_min( arr ), которая находит минимальное значение в заданном массиве.
 
-    let _array = [8, 7, 13, 15, 69, 85, 5, 2, 1];  
-    function get_min(num1, num2) {
-        if (num1 < num2) {
-            return num1;
-        } else {
-            return num2;
+    function get_min(arr) {
+        if (Array.isArray(arr) && arr.length > 0) {
+            let result = arr[0];
+
+            for (let i = 0; i < arr.length; i += 1) {
+                let element = arr[i];
+                if (element < result) {
+                    result = element;
+                }
+            }
+            return result;
         }
-    };
-    console.log(_array.reduce(get_min));
+    }
+    let array = [8, 7, 13, 15, -2, 69, 85, 5, 2, 1];
+    let min = get_min(array);
+    console.log(min);
 
    
 // Задача № 2 Создайте массив с четными числами в диапазоне от 500 до 888 включительно.
