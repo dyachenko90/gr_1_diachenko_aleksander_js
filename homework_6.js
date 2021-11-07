@@ -9,18 +9,21 @@
 
 // function get_count_work_days(date1, date2) {
 //     if (date1 instanceof Date && date2 instanceof Date) {
-//         let ms_result = date1.valueOf() - date2.valueOf();
+//         let ms_result = date1.getTime() - date2.getTime();
 //         let result = Math.abs(ms_result / MS_DAY);
 //         return result;
 //     }
 //     return null;
 // }
-// let a = get_count_work_days(new Date(2021, 6, 1), new Date(2021, 6, 3));
-//     if (a > 10 && a < 20) {
+// let a = get_count_work_days(new Date(2021, 6, 1), new Date(2021, 6, 22));
+// console.log(a)
+//     input_first = a%10;
+//     input_second = a%100;
+//     if (input_second > 10 && input_second < 20) {
 //         console.log(`Разница дней между двумя датами составляет ${a} дней`);
-//     } else if (a === 1) {
+//     } else if (input_first === 1) {
 //         console.log(`Разница дней между двумя датами составляет ${a} день`);
-//     } else if (a === 2 || a === 3 || a === 4) {
+//     } else if (input_first === 2 || input_first === 3 || input_first === 4) {
 //         console.log(`Разница дней между двумя датами составляет ${a} дня`);
 //     } else {
 //         console.log(`Разница дней между двумя датами составляет ${a} дней`);
@@ -37,22 +40,33 @@
 
 // function get_count_days(date) {
 //     if (date instanceof Date) {
-//         let now_date = new Date();
-//         let ms_result = now_date.valueOf() - date.valueOf();
-//         let result = Math.trunc(Math.abs(ms_result / MS_DAY));
-//         return result;
+//         let result;
+//         let ms_result;
+
+//         if (date === undefined) {
+//             ms_result = new Date(2022, 0, 1).getTime() - new Date().getTime();
+//             console.log(ms_result);
+//             result = Math.trunc(Math.abs(ms_result / MS_DAY));
+//             return result;
+//         } else {
+//             ms_result = new Date(2022, 0, 1).getTime() - date.getTime();
+//             result = Math.trunc(Math.abs(ms_result / MS_DAY));
+//             return result;
+//         }
 //     }
 //     return null;
 // }
-// let a = get_count_days(new Date(2022, 0, 1));
-//     if (a > 10 && a < 20) {
-//         console.log(`До нового года осталось ${a} дней`);
-//     } else if (a === 1) {
-//         console.log(`До нового года осталось ${a} день`);
-//     } else if (a === 2 || a === 3 || a === 4) {
-//         console.log(`До нового года осталось ${a} дня`);
+// let a = get_count_days(new Date(2021, 0, 1));
+//     input_first = a%10;
+//     input_second = a%100;
+//     if (input_second > 10 && input_second < 20) {
+//         console.log(`До Нового года осталось ${a} дней`);
+//     } else if (input_first === 1) {
+//         console.log(`До Нового года осталось ${a} день`);
+//     } else if (input_first === 2 || input_first === 3 || input_first === 4) {
+//         console.log(`До Нового года осталось ${a} дня`);
 //     } else {
-//         console.log(`До нового года осталось ${a} дней`);
+//         console.log(`До Нового года осталось ${a} дней`);
 //     }
 
   
@@ -87,3 +101,5 @@
 //     return null;
 // }
 // let a = get_day(new Date(2022, 0, 1));
+
+
