@@ -74,7 +74,6 @@
 // "Мой калькулятор (8.11.2021 20:30): сумма = 10, (5, 5)"
 // Калькулятор должен уметь вывести историю действий в консоль и уметь очищать историю действий.
 
-
 // function Calculator (name) {
 //     this.name = name;
 // }
@@ -105,7 +104,7 @@
 //             let result = 0;
 //             result = a - b;
 //             return result;
-//             } 
+//         } 
 //         return null;
 //     }
 
@@ -119,11 +118,15 @@
 //         }
 //         return null;
 //     }
-//     let date = new Date();
-//     let today = date.getMonth() + 1;
-//     let dateTimeToday = `(${date.getDate()}.${today}.${date.getFullYear()} ${date.getHours()}:${date.getMinutes()}): `;
-    
-//     console.log(`${calculator.name} ${dateTimeToday} результат деления: ${calculator.division(4, 2)}`);
-//     console.log(`${calculator.name} ${dateTimeToday} результат вычитания: ${calculator.subtraction(5, 2)}`);
-//     console.log(`${calculator.name} ${dateTimeToday} результат сложения: ${calculator.add(6, 8)}`);
-//     console.log(`${calculator.name} ${dateTimeToday} результат умножения: ${calculator.multiply(3, 5, 6, 9)}`);
+//     function date(date) {
+//         let result;
+//         date = new Date();
+//         let today = date.getMonth() + 1;
+//         result = `(${date.getDate()}.${today}.${date.getFullYear()} ${date.getHours()}:${date.getMinutes()}): `;
+//         return result;
+//     }
+  
+//     console.log(`${calculator.name} ${date()} результат деления = ${calculator.division(4, 2)}`);
+//     console.log(`${calculator.name} ${date()} результат вычитания = ${calculator.subtraction(5, 2)}`);
+//     console.log(`${calculator.name} ${date()} результат сложения = ${calculator.add(6, 8, 7)}`);
+//     console.log(`${calculator.name} ${date()} результат умножения = ${calculator.multiply(3, 5, 6, 9)}`);
