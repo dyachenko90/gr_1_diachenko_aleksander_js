@@ -19,7 +19,6 @@
 //     this.name = name;
 // }
 // let calculator = new Calculator('Мой калькулятор');
-// console.log(calculator);
 
 //     calculator.add = function() {
 //         if (isNaN(arguments)) {
@@ -31,8 +30,7 @@
 //         }
 //         return null;
 //     }
-//     console.log(`Результат сложения: ${calculator.add(6, 8)}`);
-
+ 
 //     calculator.division = function(a, b) {
 //         if (!isNaN(a) || !isNaN(b)) {
 //             let result = 0;
@@ -41,7 +39,6 @@
 //         }
 //         return null;
 //     }
-//     console.log(`Результат деления: ${calculator.division(4, 2)}`);
 
 //     calculator.subtraction = function(a, b) {
 //         if (!isNaN(a) || !isNaN(b)) {
@@ -51,7 +48,6 @@
 //             } 
 //         return null;
 //     }
-//     console.log(`Результат вычитания: ${calculator.subtraction(5, 2)}`);
 
 //     calculator.multiply = function () {
 //         if (isNaN(arguments)) {
@@ -63,7 +59,12 @@
 //         }
 //         return null;
 //     }
+
+//     console.log(`Результат деления: ${calculator.division(4, 2)}`);
+//     console.log(`Результат вычитания: ${calculator.subtraction(5, 2)}`);
+//     console.log(`Результат сложения: ${calculator.add(6, 8)}`);
 //     console.log(`Результат умножения: ${calculator.multiply(3, 5, 6, 9, 90)}`);
+//     console.log(calculator);
 
 
 // Ч3
