@@ -34,7 +34,6 @@ function toRedYellow(div) {
     console.log(array);
         for (let i = 0; i <= array.length + 1; i += 1) {
         if ((i % 3) === 0) {
-            console.log(i);
             div.setAttribute('style', 'background-color: red; width: 100px; height: 100px; margin-top: 8px');
         } else {
             div.setAttribute('style', 'background-color: yellow; width: 100px; height: 100px; margin-top: 8px');
