@@ -95,3 +95,27 @@ setTimeout(toRemove, 12000, div9)
 // Написать код, который создаст на странице 2 прямоугольника разного цвета и размера.
 // При наведении курсора мыши на прямоугольник вывести в консоль размер этого прямоугольника.
 // При клике на прямоугольник - выдать уведомление, в котором будет русское название цвета этого прямоугольника.
+
+let div1 = document.createElement('div');
+div1.setAttribute('style', 'background-color: red; width: 700px; height: 500px; margin-top: 8px');
+document.body.prepend(div1);
+div1.className = "div1";
+div1.addEventListener('mouseenter', () => {
+    console.log(`Ширина прямоугольника: ${div1.style.height}, длина прямоугольника: ${div1.style.width}`);
+  });
+div1.addEventListener("click", () => {
+    alert('Цвет прямоугольника - красный');
+});
+
+
+let div2 = document.createElement('div');
+div2.setAttribute('style', 'background-color: yellow; width: 900px; height: 500px; margin-top: 8px');
+document.body.prepend(div2);
+div2.className = "div2";
+div2.addEventListener('mouseenter', () => {
+    console.log(`Ширина прямоугольника: ${div2.style.height}, длина прямоугольника: ${div2.style.width}`);
+});
+div2.addEventListener("click", () => {
+    alert('Цвет прямоугольника - желтый');
+});
+
