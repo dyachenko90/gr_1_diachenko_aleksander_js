@@ -5,7 +5,7 @@
 // 4. Удалить все квадраты, и сделать фон страницы черным.
 // Каждое действие должно выполниться через 3 секунды от предыдущего, первое действие также должно иметь задержку 3 секунды.
 
-function toCreateDiv () {
+function toCreateAndBlue () {
     for (let i = 0; i < 10; i += 1) {
         let div = document.createElement('div');
         div.classList.add('style1')
@@ -41,7 +41,7 @@ function toRemove() {
     document.body.style.backgroundColor = 'black';
 }
 
-setTimeout(toCreateDiv, 3000);
+setTimeout(toCreateAndBlue, 3000);
 setTimeout(toGreen, 6000);
 setTimeout(toRedYellow, 9000);
 setTimeout(toRemove, 12000);
