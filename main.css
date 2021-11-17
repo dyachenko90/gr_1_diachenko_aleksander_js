@@ -1,4 +1,4 @@
-.style1 {
+/* .style1 {
     background-color: blue;
     min-width: 70px;
     min-height: 70px;
@@ -31,4 +31,47 @@
 	border-right: 50px solid transparent;
 	border-bottom: 100px solid khaki;
     margin: 8px;
-  }
+  } */
+/* .to-blue {
+    width: 50px;
+    height: 50px;
+    background-color: blue;
+}
+.to-green {
+    width: 100px;
+    height: 100px;
+    background-color: green;
+}
+.div:nth-child(3n) {
+    background-color: red;
+} */
+
+body {
+    box-sizing: border-box;
+    margin-left: auto;
+    margin-right: auto;
+
+    background-color: chocolate;
+}
+li {
+    margin: 15px;
+    background-color: burlywood;
+    width: 350px;
+    height: 450px;
+    list-style: none;
+}
+.button1,
+.button2 {
+    margin-left: 15px;
+    margin-top: 15px;
+    font-size: 18px;
+}
+.inf {
+    font-size: 18px;
+    margin-left: 15px;
+    margin-top: 15px;
+}
+ul {
+    display: flex;
+    flex-wrap: wrap;
+}
