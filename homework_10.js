@@ -24,11 +24,10 @@ $(document).ready(function () {
                 </div>    
             </li>`
         };
-        console.log(users[key]);
         $('.button1').on({
             click: function() {
-                alert("Hello world");
-        }
+                alert(`Привет)`);
+            }
         })
         $('.button2').on({
             click: function() {
@@ -38,6 +37,5 @@ $(document).ready(function () {
     }
     getResponse();
 });
-
 
 
