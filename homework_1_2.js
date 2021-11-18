@@ -1,4 +1,4 @@
-const person = {
+const PERSON = {
     first_name: 'Дьяченко',
     last_name: 'Александр', 
     male: 'мужской',
@@ -6,19 +6,19 @@ const person = {
     residence: 'Украина',
     marriage: true,
 };
-    person.first_name = 'Иванов', 
-    person.last_name = 'Александр', 
-    person.male = 'мужской';
-    person.age = 34,
-    person.residence = 'Украина',
-    person.marriage = false;
+    PERSON.first_name = 'Иванов', 
+    PERSON.last_name = 'Александр', 
+    PERSON.male = 'мужской';
+    PERSON.age = 34,
+    PERSON.residence = 'Украина',
+    PERSON.marriage = false;
 
-alert(`Фамилия, имя: ${person.first_name} ${person.last_name}`);
-alert(`Пол: ${person.male}`);
-alert(`Возраст: ${person.age} года`);
-alert(`Гражданство: ${person.residence}`);
+alert(`Фамилия, имя: ${PERSON.first_name} ${PERSON.last_name}`);
+alert(`Пол: ${PERSON.male}`);
+alert(`Возраст: ${PERSON.age} года`);
+alert(`Гражданство: ${PERSON.residence}`);
 
-if (person.marriage == true) {
+if (PERSON.marriage == true) {
     alert('В браке');
 } 
 else {
